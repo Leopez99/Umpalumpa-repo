@@ -1,0 +1,140 @@
+/* ===== Variables ===== */
+:root {
+  --color-primary: #33b5e5;
+  --color-primary-dark: #0a7ea4;
+  --color-accent: #f8f9fa;
+  --color-text: #333;
+  --color-white: #fff;
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-accent);
+  line-height: 1.6;
+}
+
+/* ===== Header / Nav ===== */
+.site-header {
+  background: var(--color-primary);
+  color: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav__link:hover {
+  color: #e0f4fd;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-white);
+}
+
+.hero__title {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== Sections ===== */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--color-primary-dark);
+}
+
+#galeria,
+#acerca {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* ===== Gallery ===== */
+.gallery__item {
+  text-align: center;
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.gallery__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery__caption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ===== About ===== */
+.about {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about__text {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
